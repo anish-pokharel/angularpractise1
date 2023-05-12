@@ -7,20 +7,25 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './test.component.html',  // points to file that content html
   // template: '<div>Inline template</div>',
 
-  styleUrls: ['./test.component.css']
+  // styleUrls: ['./test.component.css']
   // styles:[''] inline css
+
 })
 export class TestComponent implements OnInit {
   public name = "code with me anish";
+  public myId = "testId";
+  public isDisabled = false;
+  // public siteUrl = window.location.href;  // creating new property 
 
-  public siteUrl = window.location.href;  // creating new property 
+  constructor() { }
+
 
   ngOnInit(): void {
 
   }
 
-  greetUser() {
-    return "Hello " + this.name;  //represent name property 
-  }
+  // greetUser() {
+  //   return "Hello " + this.name;  //represent name property 
+  // }
 
 }

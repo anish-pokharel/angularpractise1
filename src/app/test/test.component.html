@@ -1,17 +1,18 @@
-<h2>Welcome {{ name }}</h2>
+<!-- interpolation -->
+<!-- <h2>Welcome {{ name }}</h2> -->
 <!-- {{it is a concept of interpolation }} asking angular content in curly bracket and evaluate in browsers-->
 
-<h2>{{ 2 + 2 }}</h2>
+<!-- <h2>{{ 2 + 2 }}</h2> -->
 <!-- evalute value -->
-<h2>{{ "welcome  and hello " + name }}</h2>
+<!-- <h2>{{ "welcome  and hello " + name }}</h2> -->
 <!-- con.  -->
-
+<!-- 
 <h2>{{ name.length }}</h2>
-<h2>{{ name.toUpperCase() }}</h2>
+<h2>{{ name.toUpperCase() }}</h2> -->
 
-<h2>{{ greetUser() }}</h2>
+<!-- <h2>{{ greetUser() }}</h2> -->
 <!-- calling methods in html -->
-<h2>{{ siteUrl }}</h2>
+<!-- <h2>{{ siteUrl }}</h2> -->
 
 <!-- these are the things we can so in interpolaltion  -->
 
@@ -24,3 +25,15 @@ we learn  we can bind data from class to template
 {{}}
 sting con
 property  -->
+
+<!-- property Binding -->
+<h2>welcome {{ name }}</h2>
+
+<!-- <input type="text" value="anish" /> -->
+<input [id]="myId" type="text" value="anish" />
+<input [id]="myId" type="text" value="anish" />
+<!-- property binding with square bracket -->
+<input bind-disabled="isDisabled" id="{{ myId }}" type="text" value="anish" />
+<!-- we can bind with bind property -->
+<!-- interpolation can work with only stinr values so this limitation we need
+property Binding -->
