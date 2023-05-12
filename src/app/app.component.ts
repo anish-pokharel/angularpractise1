@@ -8,4 +8,8 @@ declare let alertify: any;
 })
 export class AppComponent {
   title = 'practise1';
+
+  // public name = 'anish';
+  public color = "red";
+  public message = '';
 }

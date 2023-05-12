@@ -1,12 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 // import * as alertify from 'alertifyjs';
 declare let alertify: any;
 
 
 @Component({
-  // selector: 'app-test',  //by default use as root 
+  selector: 'app-test',  //by default use as root 
   // selector: '.app-test',  // use as class by putting . 
-  selector: '[app-test]',   // use as attribute
+  // selector: '[app-test]',   // use as attribute
   templateUrl: './test.component.html',  // points to file that content html
   // template: '<div>Inline template</div>',
   // template: `<h2 class="text-success">anish</h2>
@@ -32,6 +32,14 @@ declare let alertify: any;
 
 })
 export class TestComponent implements OnInit {
+  // @Input() public parentColor: any;
+
+  // @Input('parentData') public name: any;
+  @Input('parentColor') public color: any;
+
+  @Output() public childEvent = new EventEmitter();
+
+
   // properties
   // public name = "code with me anish";
   // public myId = "testId";
@@ -57,10 +65,14 @@ export class TestComponent implements OnInit {
 
   // displayName = true;
 
-  public colors = ["red", "blue", "green", "yellow"];
+  // public colors = ["red", "blue", "green", "yellow"];
   constructor() { }
   ngOnInit(): void {
 
+  }
+
+  fireEvent() {
+    this.childEvent.emit('hey anish ');
   }
 
   // greetUser() {

@@ -1,6 +1,11 @@
 <div class="text-align:center">
   <h1>welcome to {{ title }}</h1>
+  <h1>{{ message }}</h1>
   <!-- <app-test></app-test> -->
   <!-- <div class="class app-test"></div> -->
-  <div app-test></div>
 </div>
+
+<!-- [parentData] will be used ny child components  -->
+<!-- name  message to child componenets  -->
+<!-- <app-test [parentData]="name"></app-test> -->
+<app-test (childEvent)="message = $event" [parentColor]="color"></app-test>
