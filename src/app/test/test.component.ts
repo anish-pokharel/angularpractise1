@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+// import * as alertify from 'alertifyjs';
+declare let alertify: any;
+
 
 @Component({
   // selector: 'app-test',  //by default use as root 
@@ -30,22 +33,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestComponent implements OnInit {
   // properties
+  public name = "code with me anish";
   // public myId = "testId";
   // public isDisabled = false;
   // public siteUrl = window.location.href;  // creating new property 
   // public sucessClass = "text-success";
-  public name = "code with me anish";
-  public sucessClass = "text-success";
-  public hasError = true;
-  public isSpecial = true;
+  // public sucessClass = "text-success";
+  // public hasError = true;
+  // public isSpecial = true;
   // public hasError = false;
 
-  public messgaeClasses = {
-    "text-success": !this.hasError,
-    "text-danger": this.hasError,
-    "text-special": this.isSpecial
-  }
+  // public messgaeClasses = {
+  //   "text-success": !this.hasError,
+  //   "text-danger": this.hasError,
+  //   "text-special": this.isSpecial
+  // }
 
+
+  public greeting = "";
 
 
 
@@ -60,5 +65,9 @@ export class TestComponent implements OnInit {
   // greetUser() {
   //   return "Hello " + this.name;  //represent name property 
   // }
+  onClick(event: Event) {
+    console.log(event);
+    this.greeting = event.type;
+  }
 
 }
