@@ -33,7 +33,7 @@ declare let alertify: any;
 })
 export class TestComponent implements OnInit {
   // properties
-  public name = "code with me anish";
+  // public name = "code with me anish";
   // public myId = "testId";
   // public isDisabled = false;
   // public siteUrl = window.location.href;  // creating new property 
@@ -48,16 +48,17 @@ export class TestComponent implements OnInit {
   //   "text-danger": this.hasError,
   //   "text-special": this.isSpecial
   // }
+  // public greeting = "";
+
+  // public name = '';
+  // displayName = true; //=> shows the name 
 
 
-  public greeting = "";
 
+  // displayName = true;
 
-
-
+  public colors = ["red", "blue", "green", "yellow"];
   constructor() { }
-
-
   ngOnInit(): void {
 
   }
@@ -65,9 +66,12 @@ export class TestComponent implements OnInit {
   // greetUser() {
   //   return "Hello " + this.name;  //represent name property 
   // }
-  onClick(event: Event) {
-    console.log(event);
-    this.greeting = event.type;
-  }
+  // onClick(event: Event) {
+  //   console.log(event);
+  //   this.greeting = event.type;
+  // }
 
+  // logMessage(value: any) {
+  //   console.warn(value)
+  // }
 }
