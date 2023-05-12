@@ -27,13 +27,25 @@ sting con
 property  -->
 
 <!-- property Binding -->
-<h2>welcome {{ name }}</h2>
+<!-- <h2>welcome {{ name }}</h2> -->
 
 <!-- <input type="text" value="anish" /> -->
-<input [id]="myId" type="text" value="anish" />
-<input [id]="myId" type="text" value="anish" />
+<!-- <input [id]="myId" type="text" value="anish" /> -->
+<!-- <input [id]="myId" type="text" value="anish" /> -->
 <!-- property binding with square bracket -->
-<input bind-disabled="isDisabled" id="{{ myId }}" type="text" value="anish" />
+<!-- <input bind-disabled="isDisabled" id="{{ myId }}" type="text" value="anish" /> -->
 <!-- we can bind with bind property -->
 <!-- interpolation can work with only stinr values so this limitation we need
 property Binding -->
+
+<!-- class Binding -->
+<!-- <h2 class="text-sucess">welcome{{ name }}</h2> -->
+
+<h2 class="text-success">welcome {{ name }}</h2>
+<h2 [class]="sucessClass">hello {{ name }}</h2>
+
+<!-- <h2 class="fst-italic">hey {{ name }}</h2>
+class become dummy interm of class binding -->
+
+<!-- <h2 [class.text-danger]="hasError">anish</h2> -->
+<h2 [ngClass]="messgaeClasses">anish</h2>
