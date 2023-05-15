@@ -66,6 +66,15 @@ export class TestComponent implements OnInit {
   // displayName = true;
 
   // public colors = ["red", "blue", "green", "yellow"];
+
+  public name = 'anish';
+  public message = 'code with anish';
+  public person = {
+    "firstName": "anish",
+    "lastName ": "pokharel"
+  }
+
+
   constructor() { }
   ngOnInit(): void {
 
