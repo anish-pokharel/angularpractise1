@@ -73,6 +73,7 @@ export class TestComponent implements OnInit {
     "firstName": "anish",
     "lastName ": "pokharel"
   }
+  public date = new Date();
 
 
   constructor() { }

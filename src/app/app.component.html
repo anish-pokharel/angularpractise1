@@ -9,3 +9,5 @@
 <!-- name  message to child componenets  -->
 <!-- <app-test [parentData]="name"></app-test> -->
 <app-test (childEvent)="message = $event" [parentColor]="color"></app-test>
+
+<router-outlet></router-outlet>
